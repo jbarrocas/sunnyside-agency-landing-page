@@ -2,67 +2,118 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles/style.css">
   
   <title>Frontend Mentor | Sunnyside agency landing page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-  About
-  Services
-  Projects
-  Contact
 
-  We are creatives
+  <header class="header">
+    <img class="top-logo" src="images/logo.svg" alt="sunnyside logo">
+    <nav>
+      <ul class="menu">
+        <li class="menu-buttons" id="menuButton1">About</li>
+        <li class="menu-buttons" id="menuButton2">Services</li>
+        <li class="menu-buttons" id="menuButton3">Projects</li>
+        <li class="menu-buttons" id="menuButton4">Contact</li>
+      </ul>
+    </nav>
+  </header>
 
-  Transform your brand
+  <main>
+    <section class="top-section">
+      <h1>We are creatives</h1>
+      <img src="images/desktop/image-header.jpg" alt="sliced orange">
+      <img src="images/icon-arrow-down.svg" alt="arrow down vector">
+    </section>
 
-  We are a full-service creative agency specializing in helping brands grow fast. 
-  Engage your clients through compelling visuals that do most of the marketing for you.
+    <section class="transform-section">
+      <article class="transform-article">
+        <h2>Transform your brand</h2>
+        <p>We are a full-service creative agency specializing in helping brands grow fast. 
+        Engage your clients through compelling visuals that do most of the marketing for you.</p>
+        <p>Learn more</p>
+      </article>
+      <img src="images/desktop/image-transform.jpg" alt="egg in yellow background">
+    </section>
 
-  Learn more
+    <section class="stand-section">
+      <img src="images/desktop/image-stand-out.jpg" alt="pink glass in pink background">
+      <article>
+        <h2>Stand out to the right audience</h2>
+        <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</p>
+        <p>Learn more</p>
+      </article>
+    </section>
 
-  Stand out to the right audience
+    <section class="graphic-section">
+      <img src="images/desktop/image-graphic-design.jpg" alt="cherrys on greenish background">
+      <h3>Graphic design</h3>
+      <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+    </section>
 
-  Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
+    <section class="photography-section">
+      <img src="images/desktop/image-photography.jpg" alt="orange on cyan background">
+      <h3>Photography</h3>
+      <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+    </section>
 
-  Learn more
+    <section class="testimonials-section">
+      <h4>Client testimonials</h4>
+      <article>
+        <img src="images/image-emily.jpg" alt="Emily R.">
+        <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+        <p>Emily R.</p>
+        <p>Marketing Director</p>
+      </article>
+      <article>
+        <img src="images/image-thomas.jpg" alt="Thomas S.">
+        <p>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+        <p>Thomas S.</p>
+        <p>Chief Operating Officer</p>
+      </article>
+      <article>
+        <img src="images/image-jennie.jpg" alt="Jennie F.">
+        <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+        <p>Jennie F.</p>
+        <p>Business Owner</p>
+      </article>
+    </section>
 
-  Graphic design
-  Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
+    <section class="gallery-section">
+      <img src="images/desktop/image-gallery-milkbottles.jpg" alt="milk bottles">
+      <img src="images/desktop/image-gallery-orange.jpg" alt="orange on white and blue plate">
+      <img src="images/desktop/image-gallery-cone.jpg" alt="icecream cone">
+      <img src="images/desktop/image-gallery-sugarcubes.jpg" alt="sugar cubes on pink background">
+    </section>
 
-  Photography
-  Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+  </main>
 
-  Client testimonials
+  <footer>
+    <img src="images/logo_footer.svg" alt="sunnyside logo">
+    <section>
+      <ul>
+        <li>About</li>
+        <li>Services</li>
+        <li>Projects</li>
+      </ul>
+    </section>
 
-  We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
-  Emily R.
-  Marketing Director
-
-  Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
-  Thomas S.
-  Chief Operating Officer
-
-  Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
-  Jennie F.
-  Business Owner
-
-  About
-  Services
-  Projects
-  Contact
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    <address> <!--Contact -->
+      <img src="images/icon-facebook.svg" alt="facebook link">
+      <img src="images/icon-instagram.svg" alt="instagram link">
+      <img src="images/icon-twitter.svg" alt="twitter link">
+      <img src="images/icon-pinterest.svg" alt="pinterest link">
+    </address>    
+  
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.linkedin.com/in/jos%C3%A9-barrocas-9546337/" target="_blank">José Barrocas</a>.
+    </div>
+  </footer>
+  
 </body>
 </html>
