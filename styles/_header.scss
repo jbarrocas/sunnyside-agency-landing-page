@@ -1,0 +1,50 @@
+@use '../styles/abstracts/typography' as t;
+@use '../styles/abstracts/colors' as c;
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    background-color: gray; // delete
+
+    .top-logo{
+        width: 10.75rem;
+        display: flex;
+        margin-left: 2.5rem;
+    }
+
+    .menu{
+        display: flex;
+        list-style: none;
+        margin: 0rem 3rem 0rem 0rem;
+        gap: 3rem;
+        font-family: t.$text-font-family;
+        font-size: 1.125rem;
+        color: c.$white;
+    }
+
+    .menu-buttons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 28px;
+        color: c.$white;
+        cursor: pointer;
+    }
+
+    #menuButton4{
+        width: 8.75rem;
+        height: 3.25rem;
+        color: c.$veryDarkDesaturatedBlue;
+        background-color: c.$white;
+        text-transform: uppercase;
+        font-family: t.$heading-font-family;
+        font-size: 1rem;
+    }
+
+    #menuButton4:hover{
+        color: c.$white;
+        background-color: c.$whiteWithOpacity;
+    }
+}
