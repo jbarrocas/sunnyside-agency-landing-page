@@ -2,12 +2,6 @@
 @use "./header";
 
 
-
-.transform-article{
-    @include a.articles(left);
-}
-
-
 body{
     max-width: 1440px;
     margin: 0 auto 0 auto;
@@ -16,13 +10,11 @@ body{
     font-size: a.$base-font-size;
 }
 
-main{
-    section{
-        img{
-            max-width: 1440px;
-        }
-    }
+.transform-article{
+    @include a.articles(left);
 }
+
+
 
 
 
