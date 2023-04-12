@@ -12,78 +12,92 @@
 <body>
 
   <header class="header">
-    <img class="top-logo" src="images/logo.svg" alt="sunnyside logo">
-    <nav>
-      <ul class="menu">
-        <li class="menu-buttons" id="menuButton1">About</li>
-        <li class="menu-buttons" id="menuButton2">Services</li>
-        <li class="menu-buttons" id="menuButton3">Projects</li>
-        <li class="menu-buttons" id="menuButton4">Contact</li>
-      </ul>
-    </nav>
+    <div class="header-image">
+      <!-- header image -->
+      <div class="top-section">
+        <div class="nav-bar">
+          <img class="top-logo" src="images/logo.svg" alt="sunnyside logo">
+          <nav>
+            <ul class="menu">
+              <li class="menu-buttons" id="menuButton1">About</li>
+              <li class="menu-buttons" id="menuButton2">Services</li>
+              <li class="menu-buttons" id="menuButton3">Projects</li>
+              <li class="menu-buttons" id="menuButton4">Contact</li>
+            </ul>
+          </nav>
+        </div>
+        <section class="creatives">
+          <h1 class="h1">We are creatives</h1>
+          <div><img src="images/icon-arrow-down.svg" alt="arrow down vector" class="arrow">
+          </div>
+        </section>
+      </div>
+
+    </div>
   </header>
 
   <main>
-    <section class="top-section">
-      <div><h1 class="h1">We are creatives</h1>
-        <div><img src="images/desktop/image-header.jpg" alt="sliced orange" class="orange">
-          <div><img src="images/icon-arrow-down.svg" alt="arrow down vector" class="arrow">
-        </div>
-      </div>
-    </div>
-    </section>
-
     <section class="transform-section">
       <article class="transform-article">
         <h2>Transform your brand</h2>
         <p>We are a full-service creative agency specializing in helping brands grow fast. 
         Engage your clients through compelling visuals that do most of the marketing for you.</p>
-        <p>Learn more</p>
+        <p class="learn" id="learnMoreTransform">Learn more</p>
+        <div class="learn-under"></div>
       </article>
-      <img src="images/desktop/image-transform.jpg" alt="egg in yellow background">
+      <img src="images/desktop/image-transform.jpg" alt="egg in yellow background" class="egg">
     </section>
 
     <section class="stand-section">
-      <img src="images/desktop/image-stand-out.jpg" alt="pink glass in pink background">
-      <article>
+      <img src="images/desktop/image-stand-out.jpg" alt="pink glass in pink background" class="glass">
+      <article class="stand-article">
         <h2>Stand out to the right audience</h2>
         <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</p>
-        <p>Learn more</p>
+        <p class="learn" id="learnMoreStand">Learn more</p>
+        <div class="learn-under"></div>
       </article>
     </section>
 
-    <section class="graphic-section">
-      <img src="images/desktop/image-graphic-design.jpg" alt="cherrys on greenish background">
-      <h3>Graphic design</h3>
-      <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
-    </section>
+    <div class="graphic-photography">
+      <section class="graphic-section">
+        <img src="images/desktop/image-graphic-design.jpg" alt="cherrys on greenish background">
+        <div class="graphic-text">
+          <h3>Graphic design</h3>
+          <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+        </div>
+      </section>
 
-    <section class="photography-section">
-      <img src="images/desktop/image-photography.jpg" alt="orange on cyan background">
-      <h3>Photography</h3>
-      <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
-    </section>
+      <section class="photography-section">
+        <img src="images/desktop/image-photography.jpg" alt="orange on cyan background">
+        <div class="photo-text">
+          <h3>Photography</h3>
+          <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+        </div>
+      </section>
+    </div>
 
     <section class="testimonials-section">
       <h4>Client testimonials</h4>
-      <article>
-        <img src="images/image-emily.jpg" alt="Emily R.">
-        <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
-        <p>Emily R.</p>
-        <p>Marketing Director</p>
-      </article>
-      <article>
-        <img src="images/image-thomas.jpg" alt="Thomas S.">
-        <p>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
-        <p>Thomas S.</p>
-        <p>Chief Operating Officer</p>
-      </article>
-      <article>
-        <img src="images/image-jennie.jpg" alt="Jennie F.">
-        <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
-        <p>Jennie F.</p>
-        <p>Business Owner</p>
-      </article>
+      <div class="testimonials">
+        <article>
+          <img src="images/image-emily.jpg" alt="Emily R.">
+          <p class="testimonial">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+          <p class="name">Emily R.</p>
+          <p class="position">Marketing Director</p>
+        </article>
+        <article>
+          <img src="images/image-thomas.jpg" alt="Thomas S.">
+          <p class="testimonial">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+          <p class="name">Thomas S.</p>
+          <p class="position">Chief Operating Officer</p>
+        </article>
+        <article>
+          <img src="images/image-jennie.jpg" alt="Jennie F.">
+          <p class="testimonial">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+          <p class="name">Jennie F.</p>
+          <p class="position">Business Owner</p>
+        </article>
+      </div>
     </section>
 
     <section class="gallery-section">
@@ -96,20 +110,24 @@
   </main>
 
   <footer>
-    <img src="images/logo_footer.svg" alt="sunnyside logo">
-    <section>
-      <ul>
-        <li>About</li>
-        <li>Services</li>
-        <li>Projects</li>
+    <img class="logo" src="images/logo_footer.svg" alt="sunnyside logo">
+    <section class="footer-menu">
+      <ul class="secondary-menu">
+        <li class="sec-button" id="about">About</li>
+        <li class="sec-button" id="services">Services</li>
+        <li class="sec-button" id="projects">Projects</li>
       </ul>
     </section>
 
     <address> <!--Contact -->
-      <img src="images/icon-facebook.svg" alt="facebook link">
-      <img src="images/icon-instagram.svg" alt="instagram link">
-      <img src="images/icon-twitter.svg" alt="twitter link">
-      <img src="images/icon-pinterest.svg" alt="pinterest link">
+      <img class="contacts" src="images/icon-facebook.svg" alt="facebook link">
+      <img class="white-contact hide" src="images/icon-facebook _white.svg" alt="facebook link">
+      <img class="contacts" src="images/icon-instagram.svg" alt="instagram link">
+      <img class="white-contact hide" src="images/icon-instagram_white.svg" alt="instagram link">
+      <img class="contacts" src="images/icon-twitter.svg" alt="twitter link">
+      <img class="white-contact hide" src="images/icon-twitter_white.svg" alt="twitter link">
+      <img class="contacts" src="images/icon-pinterest.svg" alt="pinterest link">
+      <img class="white-contact hide" src="images/icon-pinterest_white.svg" alt="pinterest link">
     </address>    
   
     <div class="attribution">
@@ -117,6 +135,8 @@
       Coded by <a href="https://www.linkedin.com/in/jos%C3%A9-barrocas-9546337/" target="_blank">José Barrocas</a>.
     </div>
   </footer>
+
+  <script src="js/main.js"></script>
   
 </body>
 </html>

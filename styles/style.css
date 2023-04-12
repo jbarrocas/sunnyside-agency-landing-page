@@ -1,5 +1,78 @@
 @import url("https://fonts.googleapis.com/css2?family=Asul&family=Barlow:wght@600&family=Open+Sans:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Asul&family=Fraunces:wght@700;900&family=Open+Sans:wght@400;700&display=swap");
+.header .header-image {
+  width: 1440px;
+  height: 800px;
+  background-image: url(../images/desktop/image-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2.125rem;
+}
+.header .header-image .top-section {
+  display: flex;
+  flex-direction: column;
+}
+.header .header-image .top-section .nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .header-image .top-section .nav-bar .top-logo {
+  width: 10.75rem;
+  display: flex;
+  margin-left: 0.375em;
+}
+.header .header-image .top-section .nav-bar .menu {
+  display: flex;
+  list-style: none;
+  margin: 0rem 0.5rem 0rem 0rem;
+  gap: 3rem;
+  font-family: "Barlow", sans-serif;
+  font-size: 1.125rem;
+  color: hsl(0, 0%, 100%);
+}
+.header .header-image .top-section .nav-bar .menu .menu-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 28px;
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+.header .header-image .top-section .nav-bar .menu #menuButton4 {
+  width: 8.75rem;
+  height: 3.25rem;
+  color: hsl(212, 27%, 19%);
+  background-color: hsl(0, 0%, 100%);
+  text-transform: uppercase;
+  font-family: "Fraunces", serif;
+  font-size: 1rem;
+}
+.header .header-image .top-section .nav-bar .menu #menuButton4:hover {
+  color: hsl(0, 0%, 100%);
+  background-color: hsla(0, 0%, 100%, 0.3);
+}
+.header .header-image .top-section .creatives {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 4.125rem;
+}
+.header .header-image .top-section .creatives .h1 {
+  color: hsl(0, 0%, 100%);
+  text-transform: uppercase;
+  font-family: "Fraunces", serif;
+  font-size: 3.375rem;
+  letter-spacing: 0.625rem;
+  font-weight: 900;
+  display: flex;
+}
+.header .header-image .top-section .creatives .arrow {
+  display: flex;
+  margin-top: 2.825rem;
+}
+
 html {
   box-sizing: border-box;
   font-size: 100%;
@@ -16,61 +89,293 @@ body {
   padding: 0;
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 2rem;
-  background-color: gray;
-}
-.header .top-logo {
-  width: 10.75rem;
-  display: flex;
-  margin-left: 2.5rem;
-}
-.header .menu {
-  display: flex;
-  list-style: none;
-  margin: 0rem 3rem 0rem 0rem;
-  gap: 3rem;
-  font-family: "Barlow", sans-serif;
-  font-size: 1.125rem;
-  color: hsl(0, 0%, 100%);
-}
-.header .menu-buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 28px;
-  color: hsl(0, 0%, 100%);
-  cursor: pointer;
-}
-.header #menuButton4 {
-  width: 8.75rem;
-  height: 3.25rem;
-  color: hsl(212, 27%, 19%);
-  background-color: hsl(0, 0%, 100%);
-  text-transform: uppercase;
-  font-family: "Fraunces", serif;
-  font-size: 1rem;
-}
-.header #menuButton4:hover {
-  color: hsl(0, 0%, 100%);
-  background-color: hsla(0, 0%, 100%, 0.5);
-}
-
 body {
   max-width: 1440px;
   margin: 0 auto 0 auto;
-  background-color: hsl(51, 100%, 49%);
-  color: hsl(7, 99%, 70%);
+  color: hsl(167, 40%, 24%);
   font-size: 1rem;
 }
 
-.transform-article {
+.transform-section {
+  display: flex;
+  width: 1440px;
+}
+.transform-section .transform-article {
   display: flex;
   flex-direction: column;
   text-align: left;
+  width: 720px;
+  height: 600px;
+  padding-top: 140px;
+  padding-left: 116px;
+  padding-right: 140px;
+}
+.transform-section .transform-article h2 {
+  width: 340px;
+  font-family: "Fraunces", serif;
+  color: hsl(212, 27%, 19%);
+  font-weight: 900;
+  font-size: 38px;
+  margin-bottom: 40px;
+}
+.transform-section .transform-article p {
+  font-family: "Barlow", sans-serif;
+  color: hsl(232, 10%, 55%);
+  font-size: 18px;
+  line-height: 1.7;
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+.transform-section .transform-article .learn {
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: "Fraunces", serif;
+  color: hsl(212, 27%, 19%);
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 900;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  z-index: 1;
+  cursor: pointer;
+}
+.transform-section .transform-article .learn-under {
+  float: left;
+  background-color: hsl(51, 100%, 49%);
+  opacity: 0.3;
+  width: 32%;
+  height: 10px;
+  border-radius: 4px;
+  margin-top: -14px;
+  margin-left: -8px;
+  z-index: 0;
+}
+
+.stand-section {
+  display: flex;
+  width: 1440px;
+}
+.stand-section .stand-article {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 720px;
+  height: 600px;
+  padding-top: 140px;
+  padding-left: 112px;
+  padding-right: 156px;
+}
+.stand-section .stand-article h2 {
+  width: 420px;
+  font-family: "Fraunces", serif;
+  color: hsl(212, 27%, 19%);
+  font-weight: 900;
+  font-size: 38px;
+  margin-bottom: 40px;
+}
+.stand-section .stand-article p {
+  font-family: "Barlow", sans-serif;
+  color: hsl(232, 10%, 55%);
+  font-size: 18px;
+  line-height: 1.7;
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+.stand-section .stand-article .learn {
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: "Fraunces", serif;
+  color: hsl(212, 27%, 19%);
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 900;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  z-index: 2;
+  cursor: pointer;
+}
+.stand-section .stand-article .learn-under {
+  float: left;
+  background-color: hsl(7, 99%, 70%);
+  opacity: 0.3;
+  width: 33%;
+  height: 10px;
+  border-radius: 4px;
+  margin-top: -14px;
+  margin-left: -8px;
+  z-index: 0;
+}
+
+.hide {
+  display: none;
+}
+
+.graphic-photography {
+  display: flex;
+}
+.graphic-photography .graphic-section {
+  position: relative;
+}
+.graphic-photography .graphic-section .graphic-text {
+  color: hsl(167, 40%, 24%);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 34px;
+  position: absolute;
+  top: 390px;
+  padding: 0px 190px;
+}
+.graphic-photography .graphic-section .graphic-text h3 {
+  font-family: "Fraunces", serif;
+  font-size: 30px;
+  font-weight: 900;
+  margin: 0;
+}
+.graphic-photography .graphic-section .graphic-text p {
+  font-family: "Barlow", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+  opacity: 0.8;
+}
+.graphic-photography .photography-section {
+  position: relative;
+}
+.graphic-photography .photography-section .photo-text {
+  color: hsl(198, 62%, 26%);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 34px;
+  position: absolute;
+  top: 390px;
+  padding: 0px 190px;
+}
+.graphic-photography .photography-section .photo-text h3 {
+  font-family: "Fraunces", serif;
+  font-size: 30px;
+  font-weight: 900;
+  margin: 0;
+}
+.graphic-photography .photography-section .photo-text p {
+  font-family: "Barlow", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+  opacity: 0.9;
+}
+
+.testimonials-section {
+  width: 78%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.testimonials-section h4 {
+  display: flex;
+  margin-top: 160px;
+  margin-bottom: 0px;
+  font-family: "Fraunces", serif;
+  font-size: 1.25rem;
+  font-weight: 900;
+  letter-spacing: 6px;
+  color: hsl(210, 4%, 67%);
+  text-transform: uppercase;
+}
+.testimonials-section .testimonials {
+  display: flex;
+  gap: 2.5rem;
+}
+.testimonials-section .testimonials article {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.testimonials-section .testimonials article img {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  margin-top: 86px;
+  margin-bottom: 0px;
+}
+.testimonials-section .testimonials article .testimonial {
+  font-family: "Barlow", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: hsl(213, 9%, 39%);
+  margin-top: 70px;
+  margin-bottom: 0px;
+}
+.testimonials-section .testimonials article .name {
+  font-family: "Fraunces", serif;
+  font-size: 1.1rem;
+  color: hsl(212, 27%, 19%);
+  font-weight: 900;
+  margin-top: 80px;
+  margin-bottom: 0px;
+}
+.testimonials-section .testimonials article .position {
+  font-family: "Barlow", sans-serif;
+  font-size: 0.875rem;
+  color: hsl(210, 4%, 67%);
+  margin-bottom: 0px;
+}
+
+.gallery-section {
+  max-width: 1440px;
+  display: flex;
+  margin-top: 164px;
+}
+.gallery-section img {
+  width: 360px;
+  height: 447px;
+}
+
+footer {
+  background-color: #90d4c5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .logo {
+  width: 172px;
+  margin-top: 72px;
+  margin-bottom: 0px;
+}
+footer .footer-menu {
+  margin-top: 46px;
+}
+footer .footer-menu .secondary-menu {
+  display: flex;
+  list-style: none;
+  font-family: "Barlow", sans-serif;
+  font-size: 1.1rem;
+  color: hsl(168, 34%, 41%);
+  gap: 3.5rem;
+  padding: 0;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  cursor: pointer;
+}
+footer .footer-menu #about:hover {
+  color: white;
+}
+footer .footer-menu #services:hover {
+  color: white;
+}
+footer .footer-menu #projects:hover {
+  color: white;
+}
+footer address {
+  display: flex;
+  gap: 2rem;
+  margin-top: 90px;
+  margin-bottom: 48px;
+  cursor: pointer;
 }
 
 .attribution {

@@ -2,49 +2,98 @@
 @use '../styles/abstracts/colors' as c;
 
 .header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 2rem;
-    background-color: gray; // delete
 
-    .top-logo{
-        width: 10.75rem;
-        display: flex;
-        margin-left: 2.5rem;
-    }
+    .header-image{
+        width: 1440px;
+        height: 800px;
+        background-image: url(../images/desktop/image-header.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 2.125rem;
 
-    .menu{
-        display: flex;
-        list-style: none;
-        margin: 0rem 3rem 0rem 0rem;
-        gap: 3rem;
-        font-family: t.$text-font-family;
-        font-size: 1.125rem;
-        color: c.$white;
-    }
+        .top-section{
+            display: flex;
+            flex-direction: column;
 
-    .menu-buttons{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 28px;
-        color: c.$white;
-        cursor: pointer;
-    }
+            .nav-bar{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+    
+                .top-logo{
+                    width: 10.75rem;
+                    display: flex;
+                    margin-left: 0.375em;
+                }
+    
+                .menu{
+                    display: flex;
+                    list-style: none;
+                    margin: 0rem 0.5rem 0rem 0rem;
+                    gap: 3rem;
+                    font-family: t.$text-font-family;
+                    font-size: 1.125rem;
+                    color: c.$white;
+    
+                    .menu-buttons{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 28px;
+                        color: c.$white;
+                        cursor: pointer;
+                    }
+                
+                    #menuButton4{
+                        width: 8.75rem;
+                        height: 3.25rem;
+                        color: c.$veryDarkDesaturatedBlue;
+                        background-color: c.$white;
+                        text-transform: uppercase;
+                        font-family: t.$heading-font-family;
+                        font-size: 1rem;
+                    }
+                
+                    #menuButton4:hover{
+                        color: c.$white;
+                        background-color: c.$whiteWithOpacity;
+                    }
+                
+                } 
+    
+            }
+    
+            .creatives{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                position: relative;
+                top: 4.125rem;
+        
+                .h1{
+                    color: c.$white;
+                    text-transform: uppercase;
+                    font-family: t.$heading-font-family;
+                    font-size: 3.375rem;
+                    letter-spacing: 0.625rem;
+                    font-weight: 900;
+                    display: flex;
+        
+                }
+        
+                .arrow{
+                    display: flex;
+                    margin-top: 2.825rem;
+                }
+            }
 
-    #menuButton4{
-        width: 8.75rem;
-        height: 3.25rem;
-        color: c.$veryDarkDesaturatedBlue;
-        background-color: c.$white;
-        text-transform: uppercase;
-        font-family: t.$heading-font-family;
-        font-size: 1rem;
-    }
+        }
 
-    #menuButton4:hover{
-        color: c.$white;
-        background-color: c.$whiteWithOpacity;
     }
 }
+
+
+
+
+
+
