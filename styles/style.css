@@ -143,11 +143,11 @@ body {
   float: left;
   background-color: hsl(51, 100%, 49%);
   opacity: 0.3;
-  width: 32%;
+  width: 31%;
   height: 10px;
   border-radius: 4px;
   margin-top: -14px;
-  margin-left: -8px;
+  margin-left: -7px;
   z-index: 0;
 }
 
@@ -198,11 +198,11 @@ body {
   float: left;
   background-color: hsl(7, 99%, 70%);
   opacity: 0.3;
-  width: 33%;
+  width: 32%;
   height: 10px;
   border-radius: 4px;
   margin-top: -14px;
-  margin-left: -8px;
+  margin-left: -7px;
   z-index: 0;
 }
 
@@ -359,16 +359,18 @@ footer .footer-menu .secondary-menu {
   padding: 0;
   margin-top: 0px;
   margin-bottom: 0px;
-  cursor: pointer;
 }
 footer .footer-menu #about:hover {
   color: white;
+  cursor: pointer;
 }
 footer .footer-menu #services:hover {
   color: white;
+  cursor: pointer;
 }
 footer .footer-menu #projects:hover {
   color: white;
+  cursor: pointer;
 }
 footer address {
   display: flex;
