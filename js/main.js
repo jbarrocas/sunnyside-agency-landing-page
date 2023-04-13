@@ -27,8 +27,8 @@ let whiteIconContacts = document.querySelectorAll('.white-contact');
 whiteIconContacts.forEach(element =>{
     element.addEventListener('mouseout', eventArgs =>{
         let contactOvered = eventArgs.target;
-        let whiteIcon = contactOvered.previousElementSibling;
+        let darkIcon = contactOvered.previousElementSibling;
         contactOvered.classList.add('hide');
-        whiteIcon.classList.remove('hide');
+        darkIcon.classList.remove('hide');
     })
 })
