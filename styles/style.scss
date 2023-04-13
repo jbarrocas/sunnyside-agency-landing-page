@@ -311,7 +311,14 @@ footer{
         gap: 2rem;
         margin-top: 90px;
         margin-bottom: 48px;
-        cursor: pointer;
+        
+        .contacts{
+            cursor: pointer;
+        }
+
+        .white-contact{
+            cursor: pointer;
+        }
     }
 }
 

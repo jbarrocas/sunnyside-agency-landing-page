@@ -377,6 +377,11 @@ footer address {
   gap: 2rem;
   margin-top: 90px;
   margin-bottom: 48px;
+}
+footer address .contacts {
+  cursor: pointer;
+}
+footer address .white-contact {
   cursor: pointer;
 }
 
