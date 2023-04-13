@@ -288,19 +288,21 @@ footer{
             padding: 0;
             margin-top: 0px;
             margin-bottom: 0px;
-            cursor: pointer;
         }
 
         #about:hover{
             color: white;
+            cursor: pointer;
         }
 
         #services:hover{
             color: white;
+            cursor: pointer;
         }
 
         #projects:hover{
             color: white;
+            cursor: pointer;
         }
     }
 
@@ -309,7 +311,14 @@ footer{
         gap: 2rem;
         margin-top: 90px;
         margin-bottom: 48px;
-        cursor: pointer;
+        
+        .contacts{
+            cursor: pointer;
+        }
+
+        .white-contact{
+            cursor: pointer;
+        }
     }
 }
 

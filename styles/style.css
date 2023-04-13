@@ -359,22 +359,29 @@ footer .footer-menu .secondary-menu {
   padding: 0;
   margin-top: 0px;
   margin-bottom: 0px;
-  cursor: pointer;
 }
 footer .footer-menu #about:hover {
   color: white;
+  cursor: pointer;
 }
 footer .footer-menu #services:hover {
   color: white;
+  cursor: pointer;
 }
 footer .footer-menu #projects:hover {
   color: white;
+  cursor: pointer;
 }
 footer address {
   display: flex;
   gap: 2rem;
   margin-top: 90px;
   margin-bottom: 48px;
+}
+footer address .contacts {
+  cursor: pointer;
+}
+footer address .white-contact {
   cursor: pointer;
 }
 
