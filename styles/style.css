@@ -381,6 +381,9 @@ footer address {
 footer address .contacts {
   cursor: pointer;
 }
+footer address .contacts:hover {
+  filter: brightness(6);
+}
 footer address .white-contact {
   cursor: pointer;
 }

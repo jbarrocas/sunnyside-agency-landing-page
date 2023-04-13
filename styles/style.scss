@@ -314,6 +314,11 @@ footer{
         
         .contacts{
             cursor: pointer;
+            
+        }
+
+        .contacts:hover{
+            filter: brightness(6);
         }
 
         .white-contact{
